@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAMOUD BOUALEM</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+
+<body class="blue-body" id="body-color">
+    <nav>
+        <div class="container">
+            <div class="row">
+
+                <div class=" col-lg-4 col-md-4 col-sm-6">
+                    <img class="logo" src="assets/src/logo.png" alt="logo">
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-6 menu_">
+                    <div class="openMenu"><img src="assets/src/menu.png" alt="" style="width: 30px;" ></div>
+
+                    <ul class="nav-bar mainMenu">
+                        <li>Accueil</li>
+                        <li>Produits</li>
+                        <li>Présentation</li>
+                        <li>Médias</li>
+                        <li>Contact</li>
+
+                        <div class="closeMenu"><img src="assets/src/close.png" alt=""></div>
+                    </ul>
+
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12" style="margin-top: 100px;">
+                <h1 class="mb-4">HAMOUD <br> BOUALEM</h1>
+                <p> <strong>Hamoud Boualem</strong> , Voit Le Jour en 1878.
+                    La plus ancienne entreprise algérienne en activité, voit le jour en 1878 elle est spécialisée dans
+                    la production de boissons non alcoolisées . <br>
+
+                    De nos jours, Hamoud Boualem est également exportée et distribuée dans différents pays d’Europe et
+                    au Canada.</p>
+                <div class="btn"> KHAYER TGUERDJIMA DYALEK </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="assets/src/selecto.png" alt="selecto" style="margin-left: 170px;" class="img-intro"
+                    id="main-image">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row collection">
+            <img src="assets/src/selecto.png" alt="selecto" class="selecto"
+                onclick="changeColor('blue-body', 'selecto')">
+            <img src="assets/src/annana.png" alt="annana" class="annana" onclick="changeColor('yellow-body', 'annana')">
+            <img src="assets/src/tchina.png" alt="tchina" class="tchina" onclick="changeColor('orange-body', 'tchina')">
+            <img src="assets/src/bida.png" alt="bida" class="bida" onclick="changeColor('bida-body', 'bida')">
+            <img src="assets/src/qares.png" alt="qares" class="qares" onclick="changeColor('qares-body', 'qares')">
+        </div>
+
+
+    </div>
+    </div>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function changeColor(param, imgToChange) {
+            var body = document.getElementById('body-color');
+            body.className = param;
+            var img = document.getElementById('main-image');
+            img.src = "assets/src/" + imgToChange + ".png";
+            console.log(img);
+        }
+        const mainMenu = document.querySelector('.mainMenu');
+        const openMenu = document.querySelector('.openMenu');
+        const closeMenu = document.querySelector('.closeMenu');
+        openMenu.addEventListener('click', show);
+        closeMenu.addEventListener('click', close);
+        function show() {
+            mainMenu.style.display = 'flex';
+            mainMenu.style.top = '0';
+        }
+        function close() {
+            mainMenu.style.top = '-100%'
+        }
+
+    </script>
+</body>
+
+</html>

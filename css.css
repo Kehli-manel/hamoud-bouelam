@@ -1,0 +1,52 @@
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(194, 114, 16);
+}
+nav{ 
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav .openMenu{
+    display: none;
+    cursor: pointer;
+    padding: 20px;
+}
+nav .mainMenu .closeMenu{
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 800px){
+    nav .mainMenu{
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background:#000 ;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu{
+        display: block;
+    }
+}

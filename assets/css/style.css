@@ -1,0 +1,151 @@
+.body {
+    background-color: #1F50EB;
+    color: white;
+}
+
+.logo {
+    width: 90px;
+    padding-top: 20px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 30px;
+    align-items: end;
+    padding: 40px;
+}
+
+li {
+    transition: transform 700ms;
+}
+
+li:hover {
+    
+    transform: scale(1.1);
+    cursor: pointer;
+    color: black;
+}
+
+.btn {
+    color: black;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 50px;
+    transition: transform;
+    transition-duration: 500ms;
+
+    &:hover {
+
+        transform: scale(1.1);
+    }
+}
+
+.selecto,
+.annana,
+.bida,
+.qares,
+.tchina {
+    width: 60px;
+    transition: translate 500ms;
+    cursor: pointer;
+
+    &:hover {
+        translate: 0 -20px 0;
+    }
+
+}
+
+.collection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+
+.yellow-body {
+    background-color: rgb(250, 212, 40);
+    color: white;
+}
+
+.blue-body {
+    background-color: #1F50EB;
+    color: white;
+}
+.bida-body {
+    background-color: rgb(250, 212, 40);
+    color: white;
+}
+.orange-body {
+    background-color: rgb(255, 136, 0);
+    color: white;
+}
+.qares-body {
+    background-color: rgb(117, 189, 2);
+    color: white;
+}
+.img-intro{
+    transition: transform 500ms;
+}
+.img-intro:hover{
+    transform: rotate(20deg);
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    
+
+}
+.openMenu{
+    width: 50px;
+    display: none;
+    cursor: pointer;
+   margin-left: 300px;
+
+}
+nav .mainMenu .closeMenu{
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 800px){
+    
+    nav .mainMenu{
+
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background:rgb(87, 87, 255) ;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.menu_{
+    display: flex;
+
+}
